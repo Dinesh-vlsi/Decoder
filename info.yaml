@@ -1,3 +1,19 @@
+yaml_version: 6
+
+project:
+  title: "8-bit Decoder"
+  author: "Dinesh A"
+  description: "Simple 8-bit pass-through decoder design."
+  language: "Verilog"
+  clock_hz: 0
+
+  tiles: "1x1"
+
+  top_module: "tt_um_decoder"
+
+  source_files:
+    - "decoder.v"
+
 pinout:
   ui[0]: "Input bit 0"
   ui[1]: "Input bit 1"
