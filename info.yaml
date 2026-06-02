@@ -3,7 +3,7 @@ yaml_version: 6
 project:
   title: "8-bit Decoder"
   author: "Dinesh A"
-  description: "Simple 8-bit pass-through decoder design."
+  description: "Simple 8-bit pass-through design."
   language: "Verilog"
   clock_hz: 0
 
@@ -12,7 +12,7 @@ project:
   top_module: "tt_um_decoder"
 
   source_files:
-    - "decoder.v"
+    - project.v
 
 pinout:
   ui[0]: "Input bit 0"
