@@ -13,10 +13,13 @@ module tt_um_decoder (
     input  wire rst_n
 );
 
-    // Pass input directly to output
+    // Unused signals
+    wire _unused = &{ena, clk, rst_n, uio_in};
+
+    // Pass-through logic
     assign uo_out = ui_in;
 
-    // Unused bidirectional pins
+    // Disable bidirectional pins
     assign uio_out = 8'b00000000;
     assign uio_oe  = 8'b00000000;
 
